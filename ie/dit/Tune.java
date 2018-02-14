@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 
+//Tune class
 public class Tune {
 	
 	private int x;
@@ -13,13 +14,15 @@ public class Tune {
 	private String altTitle;
 	private String notation;
 	
+	//toString method
     public String toString()
     {
         String s = "";
 		
+		//iterates through each element of
 		for(String tune:tunes)
         {
-            s.append(tune + "\n");
+				s.append(tune + " ,");
         }		
 
         return s.toString();
