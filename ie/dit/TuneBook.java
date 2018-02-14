@@ -30,4 +30,23 @@ public class TuneBook {
 			System.out.println("Error reading file" + fileName);
 		}		
 	}
+	
+    public String toString(){
+		
+        String s = "";
+		
+		for(String tune: tunes)
+        {
+            s.append(tune + "\n");
+        }		
+
+        return s.toString();
+    }	
+	
+	public Tune findTune(String title) {
+		
+		/*utilizes string.contains() to check if each line being read in
+		  contains 'title' */
+		
+	}
 }
