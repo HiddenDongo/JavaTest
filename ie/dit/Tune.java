@@ -1,6 +1,10 @@
 package ie.dit;
 
 import java.io.*;
+import java.io.IOException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.io.BufferedReader;
 
 public class Tune {
 	
@@ -13,7 +17,7 @@ public class Tune {
     {
         String s = "";
 		
-		for(String tune: tunes)
+		for(String tune:tunes)
         {
             s.append(tune + "\n");
         }		
