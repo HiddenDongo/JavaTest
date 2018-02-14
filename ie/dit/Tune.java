@@ -19,7 +19,7 @@ public class Tune {
     {
         String s = "";
 		
-		//iterates through each element of
+		//iterates through each element of the tunes ArrayList
 		for(String tune:tunes)
         {
 				s.append(tune + " ,");

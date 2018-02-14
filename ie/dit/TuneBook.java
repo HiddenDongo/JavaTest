@@ -28,10 +28,8 @@ public class TuneBook {
 		//utilizes try/catch error handling
 		try {
 			
-			//create FileReader using filename (string s)
 			FileReader fileReader = new FileReader(fileName);
 			
-			//create BufferedReader using fileReader 
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			
 			/*iterate through the file, placeing each line in the String line, while line
@@ -45,7 +43,7 @@ public class TuneBook {
 			bufferedReader.close();
 		}
 		catch(FileNotFoundException ex) {
-			System.out.println("Error opening file");
+			System.out.println("Error opening file" + fileName);
 		}		
 		catch(IOException ex) {
 			System.out.println("Error reading file" + fileName);
